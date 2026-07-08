@@ -82,7 +82,7 @@
 
   /* Manhole cover badge (signature) */
   .manhole-wrap{display:grid;place-items:center}
-  .manhole{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;position:relative;display:grid;place-items:center;text-align:center;
+  .manhole{width:min(360px,82vw);aspect-ratio:1;border-radius:50%;position:relative;display:grid;place-items:center;text-align:center;
     background:
       radial-gradient(circle at 32% 28%, #35424F 0%, #232F3C 45%, #141C25 100%);
     box-shadow:0 24px 60px rgba(0,0,0,.5), inset 0 2px 3px rgba(255,255,255,.14), inset 0 -10px 24px rgba(0,0,0,.5);
@@ -91,13 +91,13 @@
   }
   @keyframes settle{from{transform:scale(.92) rotate(-6deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
   .manhole::before{content:"";position:absolute;inset:8px;border-radius:50%;border:2px dashed rgba(255,255,255,.16)}
-  .manhole::after{content:"";position:absolute;inset:62px;border-radius:50%;border:2px solid rgba(255,255,255,.10)}
+  .manhole::after{content:"";position:absolute;inset:68px;border-radius:50%;border:2px solid rgba(255,255,255,.12)}
   .manhole svg.rim{position:absolute;inset:0;width:100%;height:100%}
-  .manhole .center{position:relative;z-index:2;padding:0 44px}
-  .manhole .center .lbl{font-weight:700;font-size:.72rem;letter-spacing:.22em;color:#9FB0C0;text-transform:uppercase}
-  .manhole .center a.ph{display:block;font-family:var(--display);font-size:1.7rem;color:#fff;text-decoration:none;margin-top:8px;line-height:1.15}
+  .manhole .center{position:relative;z-index:2;width:62%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .manhole .center .lbl{font-weight:700;font-size:.6rem;letter-spacing:.18em;color:#9FB0C0;text-transform:uppercase}
+  .manhole .center a.ph{display:block;font-family:var(--display);font-size:clamp(1.3rem,6.2vw,1.75rem);color:#fff;text-decoration:none;margin-top:8px;line-height:1.1}
   .manhole .center a.ph:hover{color:var(--orange-hi)}
-  .manhole .center .sub{margin-top:10px;font-size:.8rem;color:#9FB0C0}
+  .manhole .center .sub{margin-top:10px;font-size:.72rem;line-height:1.4;color:#9FB0C0}
   .manhole .center .sub strong{color:#FF8A4C}
 
   /* water wave divider */
