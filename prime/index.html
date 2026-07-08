@@ -19,7 +19,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.primepowerwashstl.com" />
 <meta property="og:image" content="https://www.primepowerwashstl.com/images/hero-after.webp" />
-<meta name="theme-color" content="#081c48" />
+<meta name="theme-color" content="#ffffff" />
 <link rel="canonical" href="https://www.primepowerwashstl.com/" />
 
 <!-- Local SEO: tells Google exactly what/where you are. Update sameAs links as you add profiles. -->
@@ -84,7 +84,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;background:#ffffff}
 body{
   font-family:var(--font-body);
   color:var(--text);
@@ -297,9 +297,12 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 ============================================================ */
 .why{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
 @media(max-width:820px){.why{grid-template-columns:1fr}}
-.why__media{border-radius:var(--radius);overflow:hidden;aspect-ratio:5/4;background:#0c2630;
-  box-shadow:0 28px 50px -30px rgba(16,48,110,.7)}
-.why__media img{width:100%;height:100%;object-fit:cover}
+.why__media{position:relative;aspect-ratio:0.95}
+.why__media .media-main{position:absolute;top:0;left:0;width:64%;height:76%;object-fit:cover;
+  border-radius:var(--radius);box-shadow:0 28px 50px -30px rgba(16,48,110,.7);display:block}
+.why__media .media-inset{position:absolute;right:0;bottom:0;width:52%;height:55%;object-fit:cover;
+  border-radius:var(--radius);border:6px solid #fff;
+  box-shadow:0 24px 44px -26px rgba(16,48,110,.65);display:block}
 .why__list{list-style:none;margin-top:1.4rem;display:grid;gap:1rem}
 .why__list li{display:flex;gap:.8rem;align-items:flex-start}
 .why__list svg{width:22px;height:22px;color:var(--brand);flex:none;margin-top:3px}
@@ -354,7 +357,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 .contact__line .ic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);
   display:grid;place-items:center;flex:none}
 .contact__line .ic svg{width:20px;height:20px;color:var(--aqua)}
-.contact__line small{display:block;font-family:var(--font-body);font-weight:400;font-size:.78rem;color:rgba(255,255,255,.55)}
+.contact__line small{display:block;font-family:var(--font-body);font-weight:400;font-size:.78rem;color:rgba(255,255,255,.8)}
 
 .form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:clamp(1.4rem,3vw,2rem)}
 .form label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
@@ -785,10 +788,10 @@ body.washing{overflow:hidden}
     </div>
 
     <div class="gallery">
-      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: patio cleaning">
-        <img src="images/patio-after.webp" alt="Clean concrete patio after power washing" loading="lazy" />
-        <img class="img-before" src="images/patio-before.webp" alt="Dirty concrete patio before power washing in St. Louis" loading="lazy" />
-        <span class="tile__label">Patio</span><span class="tile__hint">Click to compare</span>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: brick cleaning">
+        <img src="images/patio-after.webp" alt="Brick wall and walkway clean after power washing" loading="lazy" />
+        <img class="img-before" src="images/patio-before.webp" alt="Brick wall stained with grime before power washing in St. Louis" loading="lazy" />
+        <span class="tile__label">Brick</span><span class="tile__hint">Click to compare</span>
       </div>
       <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: patio cleaning">
         <img src="images/patio2-after.webp" alt="Paver patio clean and bright after power washing" loading="lazy" />
@@ -823,7 +826,8 @@ body.washing{overflow:hidden}
 <section class="section" id="about">
   <div class="wrap why">
     <div class="why__media reveal">
-      <img src="images/yard-sign.webp" alt="Prime Power Wash yard sign on a freshly cleaned St. Louis property" loading="lazy" style="width:100%;height:100%;object-fit:cover" />
+      <img class="media-main" src="images/jack.webp" alt="Jack, owner of Prime Power Wash, with his pressure washing rig" loading="lazy" />
+      <img class="media-inset" src="images/yard-sign.webp" alt="Prime Power Wash yard sign on a freshly cleaned St. Louis property" loading="lazy" />
     </div>
     <div class="reveal">
       <p class="eyebrow">Why Prime</p>
