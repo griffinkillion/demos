@@ -390,10 +390,12 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 
 /* sticky mobile call bar */
 .callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
-  background:var(--aqua);color:var(--ink);text-align:center;
+  background:#fff;text-align:center;
+  padding:.55rem .8rem calc(.55rem + env(safe-area-inset-bottom));
+  box-shadow:0 -4px 18px rgba(8,28,72,.14)}
+.callbar__btn{display:block;background:var(--aqua);color:var(--ink);border-radius:999px;
   font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.02em;
-  padding:.95rem 1rem calc(.95rem + env(safe-area-inset-bottom));
-  box-shadow:0 -6px 20px rgba(0,0,0,.3)}
+  padding:.85rem 1rem}
 @media(max-width:900px){
   .callbar{display:block}
   .site-footer{padding-bottom:5.5rem}
@@ -888,38 +890,20 @@ body.washing{overflow:hidden}
     <div class="reviews">
       <article class="review reveal">
         <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“Jack and Drew did an amazing job on our patio, walkway and street curb. They were professional, arrived on time and were very thorough. I highly recommend them for your power washing needs!”</p>
-        <div class="review__who">Laura E.</div>
+        <p>“This is a top-notch company! We used Prime Power Wash to clean our gutters and all exterior windows. The work was absolutely meticulous. We have used several companies in the past, including Shack Shine, but none have compared to the work done by Jack at Prime Power Wash. He removed sap from the windows and even cleaned our wood front door. The work was superior and the pricing was excellent!”</p>
+        <div class="review__who">Kathleen Molina</div>
         <div class="review__where">Google review</div>
       </article>
       <article class="review reveal">
         <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“Drew and Jack were awesome! Second time using them. Super professional, quick, and effective. My patio looks brand new!”</p>
-        <div class="review__who">Emily S.</div>
+        <p>“I had the best experience with Prime Power Wash! They provided a free consult, quote, and the results were amazing. The team was professional, efficient, and went above my expectations. I will definitely be using them again!”</p>
+        <div class="review__who">Taylor Ruwitch</div>
         <div class="review__where">Google review</div>
       </article>
       <article class="review reveal">
         <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“Drew and Jack did an awesome job removing years of dirt and grime from my pool deck. Would highly recommend these two hard working entrepreneurs!”</p>
-        <div class="review__who">Tom F.</div>
-        <div class="review__where">Google review</div>
-      </article>
-      <article class="review reveal">
-        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“The guys did a wonderful job! My patio and porch look like new. They were very professional. I would highly recommend them. They are very reasonably priced. You won't be disappointed.”</p>
-        <div class="review__who">Jeanne P.</div>
-        <div class="review__where">Google review</div>
-      </article>
-      <article class="review reveal">
-        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“They did a great job power washing our pool deck! Highly recommend! Great communication and very professional.”</p>
-        <div class="review__who">Molly B.</div>
-        <div class="review__where">Google review</div>
-      </article>
-      <article class="review reveal">
-        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p>“It was a last minute request and they fit me in the same day! They were the nicest young men and I truly appreciate their hard work. Thank you!”</p>
-        <div class="review__who">Mary J.</div>
+        <p>“Good job, good price for gutter cleaning. Recommend.”</p>
+        <div class="review__who">Theodore Soule</div>
         <div class="review__where">Google review</div>
       </article>
     </div>
@@ -1029,7 +1013,7 @@ body.washing{overflow:hidden}
   </div>
 </footer>
 
-<a class="callbar" href="tel:+13142296210">&#9742;&#xFE0E;  Tap to call — free estimate</a>
+<a class="callbar" href="tel:+13142296210"><span class="callbar__btn">&#9742;&#xFE0E;  Tap to call — free estimate</span></a>
 
 
 <!-- ---- gallery lightbox ---- -->
